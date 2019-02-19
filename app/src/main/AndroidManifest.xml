@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".alertdialog.AlertActivity"></activity>
         <activity android:name=".toast.ActivityToast" />
         <activity android:name=".MainActivity">
             <intent-filter>

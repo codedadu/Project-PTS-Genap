@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import ind.std.codedadu.pts.alertdialog.AlertActivity;
 import ind.std.codedadu.pts.toast.ActivityToast;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         Toast.makeText(MainActivity.this, fn_menu[position], Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, AlertActivity.class));
+                        finish();
                         break;
                     case 2:
                         Toast.makeText(MainActivity.this, fn_menu[position], Toast.LENGTH_SHORT).show();

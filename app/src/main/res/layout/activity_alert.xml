@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alertdialog.AlertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:onClick="basicAlert"
+            android:backgroundTint="#2196f3"
+            android:textColor="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Alert"/>
+
+        <Button
+            android:backgroundTint="#009688"
+            android:textColor="#ffff"
+            android:id="@+id/btn_alert_with_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert With Action"/>
+
+        <EditText
+            android:id="@+id/edt_put_txt"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put Your Text here"
+            android:gravity="center"/>
+
+        <Button
+            android:backgroundTint="#ff5722"
+            android:textColor="#ffff"
+            android:id="@+id/btn_alert_with_get_put"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert With Get Put"/>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="backtoList"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnBacktoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Back to List"/>
+
+</RelativeLayout>
