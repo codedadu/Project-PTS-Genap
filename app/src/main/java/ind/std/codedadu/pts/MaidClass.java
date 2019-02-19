@@ -1,8 +1,13 @@
 package ind.std.codedadu.pts;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -63,5 +68,23 @@ public class MaidClass {
                     .setMessage("Message: Pesan yang anda masukan pada EditText adalah: `" + inputan + "`");
         AlertDialog buildDialog = builderAlert.create();
         buildDialog.show();
+    }
+
+    public void snackbarBasic(CoordinatorLayout layout) {
+        Snackbar notifySnacbar = Snackbar.make(layout, "Informasi by Snackbar", Snackbar.LENGTH_SHORT);
+        notifySnacbar.show();
+    }
+
+    public void snackbarwithAction(final Context context, CoordinatorLayout layout, final String link) {
+        @SuppressLint("ResourceAsColor")
+        Snackbar notifySnacbar = Snackbar.make(layout, "Tampilkan Link: "+ link +" di Alert Dialog", Snackbar.LENGTH_LONG)
+                .setActionTextColor(Color.WHITE)
+                .setAction("View", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    alertwithgetText(context, "Link: " + link);
+                }
+            });
+        notifySnacbar.show();
     }
 }

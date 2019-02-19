@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_coordinator"
+    tools:context=".snackbar.SnackbarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="#ffff"
+            android:backgroundTint="#ff3d00"
+            android:id="@+id/btn_basic_snackbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Snackbar"/>
+
+        <Button
+            android:onClick="snackbarwithAction"
+            android:textColor="#ffff"
+            android:backgroundTint="#03A9F4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SnackBar with Action"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center_vertical|bottom"
+        android:id="@+id/btn_backtolist_snbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Back to List" />
+
+</android.support.design.widget.CoordinatorLayout>
