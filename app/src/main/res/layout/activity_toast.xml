@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toast.ActivityToast">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:id="@+id/lyt_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toastBasic"
+            android:text="Basic Toast" />
+
+        <EditText
+            android:id="@+id/edt_inputtoast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="Masukan Text"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_toastInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_str_input" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_proc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:hint="Text 1"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edt_proc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:hint="Text 2"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_toastproces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast from Process" />
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="backtoList"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnBacktoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Back to List"/>
+
+</RelativeLayout>
