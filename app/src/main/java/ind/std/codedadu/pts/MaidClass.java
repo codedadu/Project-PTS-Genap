@@ -4,14 +4,16 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MaidClass {
+public class MaidClass extends AppCompatActivity {
 
     public static void toast(Context activity, String pesan) {
         Toast.makeText(activity, pesan, Toast.LENGTH_SHORT).show();
@@ -78,7 +80,8 @@ public class MaidClass {
     public void snackbarwithAction(final Context context, CoordinatorLayout layout, final String link) {
         @SuppressLint("ResourceAsColor")
         Snackbar notifySnacbar = Snackbar.make(layout, "Tampilkan Link: "+ link +" di Alert Dialog", Snackbar.LENGTH_LONG)
-                .setActionTextColor(Color.WHITE)
+                .setActionTextColor(Color.WHITE) // Set Color of Text
+                .setDuration(5000) // Set Duration in 5000 Milisecond is 5 Second
                 .setAction("View", new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -87,4 +90,5 @@ public class MaidClass {
             });
         notifySnacbar.show();
     }
+
 }
