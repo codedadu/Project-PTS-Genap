@@ -8,13 +8,23 @@
     tools:context=".floatingactionbutton.FloatingButtonActivity">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_calendar"
+        android:id="@+id/fab_calendargetDate"
         android:backgroundTint="#4a148c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
+        android:layout_gravity="bottom|left"
         android:layout_margin="16dp"
         android:layout_marginBottom="20dp"
         android:src="@mipmap/ic_picalendar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_calendargetTime"
+        android:backgroundTint="#FF5722"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_pictime" />
 
 </android.support.design.widget.CoordinatorLayout>
