@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import ind.std.codedadu.pts.alertdialog.AlertActivity;
+import ind.std.codedadu.pts.floatingactionbutton.FloatingButtonActivity;
 import ind.std.codedadu.pts.intentexplicit.ExplicitIntentActivity;
 import ind.std.codedadu.pts.snackbar.SnackbarActivity;
 import ind.std.codedadu.pts.toast.ActivityToast;
@@ -91,6 +92,17 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, fn_menu[position], Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(MainActivity.this, ExplicitIntentActivity.class));
                         finish();
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        Toast.makeText(MainActivity.this, fn_menu[position], Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, FloatingButtonActivity.class));
+                        finish();
+                        break;
+                    case 7:
                         break;
                 }
             }
