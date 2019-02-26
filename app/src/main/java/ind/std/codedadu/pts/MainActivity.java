@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import ind.std.codedadu.pts.alertdialog.AlertActivity;
+import ind.std.codedadu.pts.datetimepicker.DatetimePickerActivity;
 import ind.std.codedadu.pts.floatingactionbutton.FloatingButtonActivity;
 import ind.std.codedadu.pts.intentexplicit.ExplicitIntentActivity;
 import ind.std.codedadu.pts.snackbar.SnackbarActivity;
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
             "ProgressBar",
             "Spinner",
             "Scroll View",
-            "Text View"
+            "Text View",
+            "Datetime Picker"
     };
 
     String[] fn_menu = {
@@ -55,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
             "Berfungsi untuk membuat tampilan loading disebut progressbar",
             "Bertujuan sebagai pemilih dengan sebuah pilihan tertentu dalam drop list",
             "Dapat menampilkan konten activity dengan scroll jika konten memenuhi lebih dari ukuran activity normal",
-            "Menampilkan sebuah konten text untuk kebutuhan user"
+            "Menampilkan sebuah konten text untuk kebutuhan user",
+            "Dapat Menampilkan Pemilih Tanggal dan Pemilih Waktu Dialog di aplikasi Android"
     };
 
     ListView lv_menu;
@@ -103,6 +106,31 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                         break;
                     case 7:
+                        break;
+                    case 8:
+                        break;
+                    case 9:
+                        break;
+                    case 10:
+                        break;
+                    case 11:
+                        break;
+                    case 12:
+                        break;
+                    case 13:
+                        break;
+                    case 14:
+                        break;
+                    case 15:
+                        break;
+                    case 16:
+                        break;
+                    case 17:
+                        break;
+                    case 18:
+                        Toast.makeText(MainActivity.this, fn_menu[position], Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, DatetimePickerActivity.class));
+                        finish();
                         break;
                 }
             }

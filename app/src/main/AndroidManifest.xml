@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".floatingactionbutton.FloatingButtonActivity"></activity>
+        <activity android:name=".datetimepicker.DatetimePickerActivity"></activity>
+        <activity android:name=".floatingactionbutton.FloatingButtonActivity" />
         <activity android:name=".intentexplicit.OtherActivity" />
         <activity android:name=".intentexplicit.ExplicitIntentActivity" />
         <activity android:name=".snackbar.SnackbarActivity" />
